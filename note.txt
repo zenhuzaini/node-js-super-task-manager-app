@@ -1,0 +1,14 @@
+Why mongoose? librray
+ - In mongoose we can do validation like, the attribute of document must be string,
+    or any other thing that cannot be done in mongodb module
+ - Mongoose works well with node.js
+ - ODM object doc mapper : to map the object in code
+ - momgoose is actually working with mongodb behnd the scene
+
+
+ lets try something with const mongoose = require('mongoose')
+ const databse = 'mongodb://127.0.0.1:27017/task-databse'
+ mongoose.connect(databse)
+
+
+ 
