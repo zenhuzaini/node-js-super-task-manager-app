@@ -37,15 +37,19 @@ const taskRouter = require('./router/task')
 app.use(userRouter)
 app.use(taskRouter)
 
-//example multer
-const multer = require('multer')
-const upload = multer({
-    dest: 'images'
+app.get('/', () => {
+    res.send('welcome to task manager APi, it is only the backend, I will soon provide the frontend once I master react :D, you can use POSTMAN to access this resource')
 })
 
-app.post('/upload', upload.single('uploadkey'), (req, res) => {
-    res.send()
-})
+// //example multer
+// const multer = require('multer')
+// const upload = multer({
+//     dest: 'images'
+// })
+
+// app.post('/upload', upload.single('uploadkey'), (req, res) => {
+//     res.send()
+// })
 
 app.listen(port, () => {
     console.log('sever connected connected to ', port)
