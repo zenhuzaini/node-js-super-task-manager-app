@@ -37,7 +37,7 @@ const taskRouter = require('./router/task')
 app.use(userRouter)
 app.use(taskRouter)
 
-app.get('/', () => {
+app.get('/', (req, res) => {
     res.send('welcome to task manager APi, it is only the backend, I will soon provide the frontend once I master react :D, you can use POSTMAN to access this resource')
 })
 
