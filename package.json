@@ -23,6 +23,9 @@
     "start": "node src/index.js",
     "dev": "env-cmd -f ./config/dev.env nodemon src/index.js"
   },
+  "jest":{
+    "testEnvironment": "node"
+  },
   "author": "",
   "license": "ISC"
 }
